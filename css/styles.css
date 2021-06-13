@@ -17,5 +17,56 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    font-family: var(--fuentePpal);
+    font-size: 1.6rem;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 4rem;
+    color: var(--secundario);
+}
+
+.contenendor{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog{
+    display: inline-block;
+    background-color: var(--primario);
+    color: var(--verde);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*Ok!*/
+
+/*
+@media (min-width:768px){
+    .tres-columnas{
+        display: flex;
+        gap: 2rem;
+    }
+}
+*/
+
+@media (min-width:768px){
+    .tres-columnas{
+        display: flex;
+        justify-content: space-between;
+    }
+    .entrada-blog{
+        flex:  0 0 calc(33.3% = 1rem);
+    }
+}
+
+
+
 
 
